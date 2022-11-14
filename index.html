@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="ejemplosApp">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Detectando IPs</title>
+
+
+        <!-- Incluir Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!-- Incluir AngularJS -->
+        <script src="js/lib/angular.min.js"></script>
+
+        <script src="js/app.js"></script>
+        
+    </head>    
+    <body>
+
+        <div class="container" ng-controller="mainCtrl">
+        <br>
+        <br>
+            <div class="container" style="width: 600px; height: 350px; background-color: #CFF5E7; border-radius: 30px;">
+                <h1>Detectar IPs</h1>
+                <h4>Manejo de recursos online</h4>
+                <hr>
+                <p>La ip es: {{geoplugin.geoplugin_request}}</p>
+                <p>La ciudad es:{{geoplugin.geoplugin_city}}</p>
+                <p>El nombre del pais es: {{geoplugin.geoplugin_countryName}}</p>
+                <p>El codigo de moneda es: {{geoplugin.geoplugin_currencyCode}}</p>
+                <p>El simbolo de moneda es: {{geoplugin.geoplugin_currencySymbol_UTF8}}</p>
+                <p>El codigo de moneda es: {{geoplugin.geoplugin_currencyCode}}</p>
+            </div>
+        </div><!-- fin del listadoCtrl -->
+
+    </body>
+</html>
